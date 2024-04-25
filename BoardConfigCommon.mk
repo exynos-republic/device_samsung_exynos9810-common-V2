@@ -178,4 +178,4 @@ WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 WIFI_DRIVER_FW_PATH_PARAM        := "/sys/module/dhd/parameters/firmware_path"
 
 # SLSI
-include $(COMMON_PATH)/BoardConfigSLSI.mk
+include hardware/samsung_slsi-linaro/config/BoardConfig9810.mk
