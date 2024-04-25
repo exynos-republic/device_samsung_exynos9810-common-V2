@@ -1,0 +1,441 @@
+<compatibility-matrix version="1.0" type="framework">
+<hal format="hidl" optional="true">
+    <name>android.hardware.audio</name>
+    <transport>hwbinder</transport>
+    <version>7.0</version>
+    <interface>
+        <name>IDevicesFactory</name>
+        <instance>default</instance>
+    </interface>
+    <fqname>@7.0::IDevicesFactory/default</fqname>
+</hal>
+<hal format="hidl" optional="true">
+    <name>android.hardware.audio.effect</name>
+    <transport>hwbinder</transport>
+    <version>7.0</version>
+    <interface>
+        <name>IEffectsFactory</name>
+        <instance>default</instance>
+    </interface>
+    <fqname>@7.0::IEffectsFactory/default</fqname>
+</hal>
+<hal format="hidl" optional="true">
+    <name>android.hardware.bluetooth</name>
+    <version>1.0</version>
+    <interface>
+        <name>IBluetoothHci</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>android.hardware.camera.provider</name>
+    <transport>hwbinder</transport>
+    <version>2.5</version>
+    <interface>
+        <name>ICameraProvider</name>
+        <instance>legacy/0</instance>
+    </interface>
+    <fqname>@2.5::ICameraProvider/legacy/0</fqname>
+</hal>
+<hal format="hidl" optional="true">
+    <name>android.hardware.gatekeeper</name>
+    <transport>hwbinder</transport>
+    <version>1.0</version>
+    <interface>
+        <name>IGatekeeper</name>
+        <instance>default</instance>
+    </interface>
+    <fqname>@1.0::IGatekeeper/default</fqname>
+</hal>
+<hal format="hidl" optional="true">
+    <name>android.hardware.graphics.allocator</name>
+    <transport>hwbinder</transport>
+    <version>2.0</version>
+    <interface>
+        <name>IAllocator</name>
+        <instance>default</instance>
+    </interface>
+    <fqname>@2.0::IAllocator/default</fqname>
+</hal>
+<hal format="hidl" optional="true">
+    <name>android.hardware.graphics.composer</name>
+    <transport>hwbinder</transport>
+    <version>2.4</version>
+    <interface>
+        <name>IComposer</name>
+        <instance>default</instance>
+    </interface>
+    <fqname>@2.4::IComposer/default</fqname>
+</hal>
+<hal format="hidl" optional="true">
+    <name>android.hardware.graphics.mapper</name>
+    <transport arch="32+64">passthrough</transport>
+    <fqname>@2.1::IMapper/default</fqname>
+    <fqname>@3.0::IMapper/default</fqname>
+</hal>
+<hal format="hidl" optional="true">
+    <name>android.hardware.keymaster</name>
+    <transport>hwbinder</transport>
+    <version>3.0</version>
+    <interface>
+        <name>IKeymasterDevice</name>
+        <instance>default</instance>
+    </interface>
+    <fqname>@3.0::IKeymasterDevice/default</fqname>
+</hal>
+<hal format="hidl" optional="true" >
+    <name>android.hardware.media.omx</name>
+    <transport>hwbinder</transport>
+    <version>1.0</version>
+    <interface>
+        <name>IOmx</name>
+        <instance>default</instance>
+    </interface>
+    <interface>
+        <name>IOmxStore</name>
+        <instance>default</instance>
+    </interface>
+    <fqname>@1.0::IOmx/default</fqname>
+    <fqname>@1.0::IOmxStore/default</fqname>
+</hal>
+<hal format="hidl" optional="true">
+    <name>android.hardware.radio</name>
+    <transport>hwbinder</transport>
+    <fqname>@1.2::ISap/slot1</fqname>
+    <fqname>@1.2::ISap/slot2</fqname>
+    <fqname>@1.4::IRadio/slot1</fqname>
+    <fqname>@1.4::IRadio/slot2</fqname>
+</hal>
+
+<!--part 2 writetn from me-->
+<hal format="hidl" optional="true">
+    <name>android.hardware.audio</name>
+    <transport>hwbinder</transport>
+    <version>7.0</version>
+    <interface>
+        <name>IDevicesFactory</name>
+        <instance>default</instance>
+    </interface>
+    <fqname>@7.0::IDevicesFactory/default</fqname>
+</hal>
+<hal format="hidl" optional="true">
+    <name>android.hardware.biometrics.fingerprint</name>
+    <transport>hwbinder</transport>
+    <version>2.3</version>
+    <interface>
+        <name>IBiometricsFingerprint</name>
+        <instance>default</instance>
+    </interface>
+    <fqname>@2.3::IBiometricsFingerprint/default</fqname>
+</hal>
+<hal format="aidl" optional="true">
+    <name>android.hardware.bluetooth.audio</name>
+    <version>3</version>
+    <interface>
+        <name>IBluetoothAudioProviderFactory</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="aidl" optional="true">
+    <name>android.hardware.drm</name>
+    <version>1</version>
+    <interface>
+        <name>IDrmFactory</name>
+        <instance>clearkey</instance>
+    </interface>
+</hal>
+<hal format="aidl">
+    <name>android.hardware.graphics.composer3</name>
+    <version>1</version>
+    <interface>
+        <name>IComposer</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>android.hardware.graphics.mapper</name>
+    <transport>passthrough</transport>
+    <version>2.1</version>
+    <interface>
+        <name>IMapper</name>
+        <instance>default</instance>
+    </interface>
+    <fqname>@2.1::IMapper/default</fqname>
+</hal>
+<hal format="hidl" optional="true">
+    <name>android.hardware.graphics.mapper</name>
+    <transport>passthrough</transport>
+    <version>3.0</version>
+    <interface>
+        <name>IMapper</name>
+        <instance>default</instance>
+    </interface>
+    <fqname>@3.0::IMapper/default</fqname>
+</hal>
+<hal format="aidl" optional="true">
+    <name>android.hardware.light</name>
+    <transport>hwbinder</transport>
+    <version>1</version>
+    <interface>
+        <name>ILights</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="aidl" optional="true">
+    <name>android.hardware.memtrack</name>
+    <transport>hwbinder</transport>
+    <version>1</version>
+    <interface>
+        <name>IMemtrack</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="aidl" optional="true">
+    <name>android.hardware.power</name>
+    <version>2</version>
+    <interface>
+        <name>IPower</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>android.hardware.radio</name>
+    <transport>hwbinder</transport>
+    <version>1.2</version>
+    <interface>
+        <name>ISap</name>
+        <instance>slot1</instance>
+    </interface>
+    <fqname>@1.2::ISap/slot1</fqname>
+</hal>
+<hal format="aidl" optional="true">
+    <name>android.hardware.sensors</name>
+    <version>1</version>
+    <interface>
+        <name>ISensors</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="aidl" optional="true">
+    <name>android.hardware.usb</name>
+    <version>1</version>
+    <interface>
+        <name>IUsb</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="aidl" optional="true">
+    <name>android.hardware.vibrator</name>
+    <version>1</version>
+    <interface>
+        <name>IVibrator</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="aidl" optional="true">
+    <name>android.hardware.wifi</name>
+    <version>1</version>
+    <interface>
+        <name>IWifi</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="aidl" optional="true">
+    <name>android.hardware.wifi.hostapd</name>
+    <version>1</version>
+    <interface>
+        <name>IHostapd</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="aidl" optional="true">
+    <name>android.hardware.wifi.supplicant</name>
+    <version>2</version>
+    <interface>
+        <name>ISupplicant</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>vendor.samsung.hardware.gnss</name>
+    <transport>hwbinder</transport>
+    <version>2.0</version>
+    <interface>
+        <name>ISehGnss</name>
+        <instance>default</instance>
+    </interface>
+    <fqname>@2.0::ISehGnss/default</fqname>
+</hal>
+<hal format="hidl" optional="true">
+    <name>vendor.samsung.hardware.radio.bridge</name>
+    <transport>hwbinder</transport>
+    <version>2.0</version>
+    <interface>
+        <name>ISehBridge</name>
+        <instance>slot1</instance>
+        <instance>slot2</instance>
+    </interface>
+    <fqname>@2.0::ISehBridge/slot1</fqname>
+    <fqname>@2.0::ISehBridge/slot2</fqname>
+</hal>
+<hal format="hidl" optional="true">
+    <name>vendor.samsung.hardware.radio.channel</name>
+    <transport>hwbinder</transport>
+    <version>2.0</version>
+    <interface>
+        <name>ISehChannel</name>
+        <instance>epdgd</instance>
+        <instance>epdgd2</instance>
+        <instance>imsd</instance>
+        <instance>imsd2</instance>
+    </interface>
+    <fqname>@2.0::ISehChannel/epdgd</fqname>
+    <fqname>@2.0::ISehChannel/epdgd2</fqname>
+    <fqname>@2.0::ISehChannel/imsd</fqname>
+    <fqname>@2.0::ISehChannel/imsd2</fqname>
+</hal>
+<hal format="hidl" optional="true">
+    <name>vendor.samsung.hardware.radio</name>
+    <transport>hwbinder</transport>
+    <version>2.1</version>
+    <interface>
+        <name>ISehRadio</name>
+        <instance>slot1</instance>
+        <instance>slot2</instance>
+    </interface>
+    <fqname>@2.1::ISehRadio/slot1</fqname>
+    <fqname>@2.1::ISehRadio/slot2</fqname>
+</hal>
+<hal format="hidl" optional="true">
+    <name>vendor.samsung.hardware.snap</name>
+    <transport>hwbinder</transport>
+    <version>1.1</version>
+    <interface>
+        <name>ISehSnap</name>
+        <instance>default</instance>
+    </interface>
+    <fqname>@1.1::ISehSnap/default</fqname>
+</hal>
+<hal format="hidl" optional="true">
+    <name>vendor.samsung.hardware.tlc.ucm</name>
+    <transport>hwbinder</transport>
+    <version>2.0</version>
+    <interface>
+        <name>ISehUcm</name>
+        <instance>default</instance>
+    </interface>
+    <fqname>@2.0::ISehUcm/default</fqname>
+</hal>
+<hal format="hidl" optional="true">
+    <name>vendor.trustonic.tee</name>
+    <transport>hwbinder</transport>
+    <version>1.0</version>
+    <interface>
+        <name>ITee</name>
+        <instance>default</instance>
+    </interface>
+    <fqname>@1.0::ITee/default</fqname>
+</hal>
+<hal format="hidl" optional="true">
+    <name>vendor.trustonic.teeregistry</name>
+    <transport>hwbinder</transport>
+    <version>1.0</version>
+    <interface>
+        <name>ITeeRegistry</name>
+        <instance>default</instance>
+    </interface>
+    <fqname>@1.0::ITeeRegistry/default</fqname>
+</hal>
+
+<!-- part 3 taken from otherdt-->
+<hal format="aidl" optional="true">
+    <name>android.hardware.cas</name>
+    <version>1</version>
+    <interface>
+        <name>IMediaCasService</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>android.hardware.cas</name>
+    <version>1.2</version>
+    <interface>
+        <name>IMediaCasService</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>android.hardware.drm</name>
+    <version>1.0-4</version>
+    <interface>
+        <name>ICryptoFactory</name>
+        <instance>widevine</instance>
+        <instance>clearkey</instance>
+    </interface>
+    <interface>
+        <name>IDrmFactory</name>
+        <instance>widevine</instance>
+        <instance>clearkey</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>android.hardware.gnss</name>
+    <version>2.0-1</version>
+    <interface>
+        <name>IGnss</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>android.hardware.graphics.mapper</name>
+    <version>4.0</version>
+    <interface>
+        <name>IMapper</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>android.hardware.health</name>
+    <version>2.0-1</version>
+    <interface>
+        <name>IHealth</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>android.hardware.radio.config</name>
+    <version>1.0-1</version>
+    <interface>
+        <name>IRadioConfig</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>android.hardware.radio</name>
+    <version>1.0-5</version>
+    <interface>
+        <name>IRadio</name>
+        <instance>em1</instance>
+        <instance>em2</instance>
+        <instance>imsAospSlot1</instance>
+        <instance>imsAospSlot2</instance>
+        <instance>se1</instance>
+        <instance>se2</instance>
+        <instance>slot1</instance>
+        <instance>slot2</instance>
+    </interface>
+    <interface>
+        <name>ISap</name>
+        <instance>slot2</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>android.hardware.thermal</name>
+    <version>2.0</version>
+    <interface>
+        <name>IThermal</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+
+</compatibility-matrix>
