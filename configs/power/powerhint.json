@@ -30,7 +30,18 @@
                 "100"
             ],
             "HoldFd": true
-        }
+        },
+        {
+            "Name": "MIFMinFreq",
+            "Path": "sys/class/devfreq/17000010.devfreq_mif/scaling_devfreq_min",
+            "Values": [
+                "1794000",
+                "1352000",
+                "845000",
+                "421000"
+            ],
+            "ResetOnInit": true
+        },
     ],
     "Actions": [
         {
@@ -38,6 +49,12 @@
             "Node": "PMQoSCpuDmaLatency",
             "Duration": 5000,
             "Value": "44"
+        },
+        {
+            "PowerHint": "LAUNCH",
+            "Node": "MIFMinFreq",
+            "Duration": 3000,
+            "Value": "1794000"
         },
         {
             "PowerHint": "CAMERA_LAUNCH",
@@ -67,7 +84,7 @@
             "PowerHint": "EXPENSIVE_RENDERING",
             "Node": "GPUMinFreq",
             "Duration": 0,
-            "Value": "338000"
+            "Value": "455000"
         },
         {
             "PowerHint": "EXPENSIVE_RENDERING",
